@@ -1,0 +1,47 @@
+#INSTALL RABBITMQ
+
+sudo apt-get update
+
+sudo apt-get install rabbitmq-server -y
+
+sudo systemctl enable rabbitmq-server
+
+sudo systemctl start rabbitmq-server
+
+sudo rabbitmqctl status
+
+
+#####################################################
+
+# INSTALL PYTHON3
+
+sudo apt install python3-pip
+
+sudo apt-get install python3-venv -y
+
+python3 -m venv venv
+
+source venv/bin/activate 
+
+
+#####################################################
+
+#INSTALL FLASK & CELERY
+
+pip install flask celery requests
+
+#####################################################
+
+#NGROK
+
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+
+sudo tar xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
+
+
+
+
+#####################################################
+
+sudo apt-get update
+sudo apt-get install nginx
